@@ -1,0 +1,26 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-title>NOTIFICATIONS</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <br>
+  <br>
+  <ion-list>
+    <ion-list>
+      <ion-item lines="full" *ngFor="let show_sucsess of noti_sucsess">
+        <ion-icon name="water" slot="start"></ion-icon>
+        <ion-label><b>{{show_sucsess.sucsess}}</b><br>{{show_sucsess.hour}}:{{show_sucsess.minutes}} น.
+          {{show_sucsess.date}}/{{show_sucsess.months}}/{{show_sucsess.year}}
+        </ion-label>
+      </ion-item>
+    </ion-list>
+    <ion-item lines="full" *ngFor="let show of noti">
+      <ion-icon name="alarm" slot="start"></ion-icon>
+      <ion-label><b>{{show.title}}</b><br>{{show.hour}}:{{show.minutes}} น.
+        {{show.date}}/{{show.months}}/{{show.year}}
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

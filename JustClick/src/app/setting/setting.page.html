@@ -1,0 +1,29 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-title>SETTINGS</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="container"><br><br>
+    <img src="../../assets/user.png" />
+  </div>
+  <p class="label" *ngFor="let user_name of username">{{user_name.username}}</p>
+  <ion-list (click)="actionPageR()">
+    <ion-item lines="full">
+      <ion-icon name="document" slot="start"></ion-icon>
+      <ion-label>รายงานผล</ion-label>
+    </ion-item>
+  </ion-list>
+  <ion-list>
+    <ion-item lines="full">
+      <ion-icon name="notifications" slot="start"></ion-icon>
+      <ion-label>อนุญาตให้เเจ้งเตือน</ion-label>
+      <ion-toggle [(ngModel)]="resume" color="success" (click)="presentAlert()"></ion-toggle>
+    </ion-item>
+  </ion-list>
+
+  <ion-button *ngFor="let document of username" expand="block" class="button-container"
+    (click)="deleteData(document.doc_id)">ออกจากระบบ</ion-button>
+
+</ion-content>

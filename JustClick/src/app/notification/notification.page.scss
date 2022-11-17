@@ -1,0 +1,31 @@
+ion-header {
+  ion-toolbar {
+    --background: #ececec;
+    --border: #ffffff;
+
+    ion-title {
+      &.md {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        height: 0;
+        text-align: center;
+      }
+    }
+  }
+
+  h4 {
+    font-weight: bold;
+    font-size: 30px;
+  }
+
+}
+
+h4 {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+ion-item {
+  margin-top: 10px
+}

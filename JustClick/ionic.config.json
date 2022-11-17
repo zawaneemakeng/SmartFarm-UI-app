@@ -1,0 +1,7 @@
+{
+  "name": "JustClick",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

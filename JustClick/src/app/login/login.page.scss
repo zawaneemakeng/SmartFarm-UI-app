@@ -1,0 +1,61 @@
+ion-header {
+  ion-toolbar {
+    --background: #ffffff;
+  }
+
+}
+
+// Removing Android Header Line
+.header-md::after {
+  background: none !important;
+}
+
+p {
+  font-size: 24px;
+  text-align: center;
+}
+
+.backbtn {
+  margin-left: 20px;
+  --background: #ffffff;
+}
+
+.form-container {
+  margin-top: 48px;
+}
+
+.form-container ion-item {
+  --padding-start: 0;
+  --border-color: #DADADA;
+}
+
+.form-container ion-item ion-label {
+  color: #A6A6A6;
+}
+
+.form-container ion-item ion-icon {
+  margin-top: auto;
+  color: #c6cbd4;
+}
+
+.form-container ion-button {
+  margin-top: 48px;
+}
+
+.sign-up {
+  margin-top: -32px;
+  margin-left: 120px;
+}
+
+
+
+ion-button {
+  --background: #7dbc88;
+  --background-hover: #d1ebd8;
+  --background-activated: #7dbc88;
+  --background-focused: #7dbc88;
+}
+
+.sign-up ion-button {
+  margin: 0;
+}

@@ -1,0 +1,54 @@
+ion-header {
+  ion-toolbar {
+    --background: #ffff;
+    --border: #ffffff;
+
+    ion-title {
+      &.md {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        height: 0;
+        text-align: center;
+      }
+    }
+  }
+
+  h4 {
+    font-weight: bold;
+    font-size: 30px;
+  }
+
+}
+
+.my-label {
+  font-size: 17px;
+
+}
+
+ion-img {
+  width: 24px;
+  height: 24px;
+  margin-right: 16px;
+}
+
+
+
+.img {
+  width: 28px;
+  height: 28px;
+  margin-right: 16px;
+  margin-left: -3px;
+}
+
+.label {
+  margin-top: 20px;
+  font-size: 19px;
+  margin-left: 35px;
+  font-weight: bold;
+
+}
+
+ion-item {
+  margin-top: 10px
+}

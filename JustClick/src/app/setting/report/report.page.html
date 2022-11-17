@@ -1,0 +1,38 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button class="backbtn" routerLink="/tabs/setting" routerDirection="back">
+        <img src="../../assets/back.png" />
+      </ion-button>
+    </ion-buttons>
+    <ion-title>REPORT</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <br>
+  <br>
+  <ion-label class="label">ความชื้นใต้ดิน</ion-label><br><br><br>
+  <ion-list>
+    <ion-item lines="full" *ngFor="let show_h of humid" class="my-label">
+      <ion-img src="https://cdn-icons-png.flaticon.com/512/728/728093.png"></ion-img>
+      <ion-label><b>{{show_h.humid}} %</b><br> {{show_h.hour}}:{{show_h.minutes}} น.
+        {{show_h.date}}/{{show_h.months}}/{{show_h.year}}
+      </ion-label>
+    </ion-item>
+  </ion-list>
+  <br><br>
+  <ion-label class="label">อุณภูมิในอากาศ</ion-label><br><br><br>
+  <ion-list>
+    <ion-item lines="full" *ngFor="let show_t of temp" class="my-label">
+      <ion-img src="https://cdn-icons-png.flaticon.com/512/8804/8804005.png" class="img"></ion-img>
+      <ion-label>
+        <b>{{show_t.temp}} ℃</b><br>{{show_t.hour}}:{{show_t.minutes}} น.
+        {{show_t.date}}/{{show_t.months}}/{{show_t.year}}
+
+      </ion-label>
+    </ion-item>
+  </ion-list> <br>
+  <br>
+</ion-content>
